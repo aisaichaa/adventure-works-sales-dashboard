@@ -1,239 +1,82 @@
 # Adventure Works Sales Analytics Dashboard
 
-An interactive **Sales Analytics Dashboard** built with **Microsoft Excel** to analyze sales performance, profitability, product performance, regional performance, and salesperson performance.
-
-The project demonstrates an end-to-end **data analytics workflow**, from raw data preparation to data modeling, DAX calculations, visualization, and dashboard development.
+Interactive **Sales Analytics Dashboard** built with **Microsoft Excel** to analyze sales performance, profitability, product, regional, and salesperson performance.
 
 ## Project Overview
 
-This project uses the **Adventure Works sales dataset** to transform raw transactional data into interactive business insights.
+This project transforms the Adventure Works dataset into an interactive dashboard to support business performance analysis and decision-making.
 
-The analysis focuses on:
+### Business Questions
 
-* Sales performance
-* Sales trends
-* Regional performance
-* Product performance
-* Salesperson performance
-* Profitability
-* Sales targets
-
-The final output is an interactive Excel dashboard that allows users to explore sales performance through dynamic filters.
-
-## Business Questions
-
-This dashboard was developed to answer the following questions:
-
-1. How is overall sales performance?
-2. How do sales change over time?
-3. Which regions generate the highest sales?
-4. Which product categories perform best?
-5. Which products generate the most sales?
-6. Which salespeople perform best?
-7. How profitable is the business?
-8. How does actual sales performance compare with targets?
+* How is overall sales performance?
+* How do sales change over time?
+* Which regions and products generate the highest sales?
+* Which salespeople perform best?
+* How profitable is the business?
+* How does actual sales compare with targets?
 
 ## Tools & Technologies
 
-| Tool                | Purpose                        |
-| ------------------- | ------------------------------ |
-| **Microsoft Excel** | Dashboard & visualization      |
-| **Power Query**     | Data cleaning & transformation |
-| **Power Pivot**     | Data modeling                  |
-| **DAX**             | KPI & business calculations    |
-| **PivotTable**      | Data analysis                  |
-| **PivotChart**      | Data visualization             |
-| **Slicer**          | Interactive filtering          |
-
+* **Microsoft Excel** — Dashboard & Visualization
+* **Power Query** — Data Cleaning & Transformation
+* **Power Pivot** — Data Modeling
+* **DAX** — KPI & Business Calculations
+* **PivotTable & PivotChart** — Analysis & Visualization
+* **Slicer** — Interactive Filtering
 
 ## Dataset
 
-The project uses the Adventure Works sales dataset consisting of the following tables:
+Tables used:
 
-* `Sales`
-* `Product`
-* `Region`
-* `Reseller`
-* `Salesperson`
-* `SalespersonRegion`
-* `Targets`
-* `Date`
-
-
-## Data Preparation
-
-Raw CSV files were processed using **Power Query**.
-
-### Data Cleaning & Transformation
-
-1. Imported raw CSV datasets
-2. Corrected CSV delimiters
-3. Cleaned currency-formatted values
-4. Converted columns to appropriate data types
-5. Standardized column names
-6. Prepared tables for the Data Model
-
-## Key Performance Indicators
-
-The dashboard includes the following KPIs:
-
-| KPI                     | Description                     |
-| ----------------------- | ------------------------------- |
-| **Total Sales**         | Total revenue generated         |
-| **Total Cost**          | Total cost of sales             |
-| **Total Quantity**      | Total units sold                |
-| **Profit**              | Sales minus cost                |
-| **Profit Margin**       | Profit as a percentage of sales |
-| **Total Orders**        | Number of unique sales orders   |
-| **Average Order Value** | Average sales value per order   |
-
-
-## DAX Measures
-
-### Total Sales
-
-```DAX
-Total Sales :=
-SUM(Sales[Sales])
-```
-
-### Total Cost
-
-```DAX
-Total Cost :=
-SUM(Sales[Cost])
-```
-
-### Total Quantity
-
-```DAX
-Total Quantity :=
-SUM(Sales[Quantity])
-```
-
-### Profit
-
-```DAX
-Profit :=
-[Total Sales] - [Total Cost]
-```
-
-### Profit Margin
-
-```DAX
-Profit Margin :=
-DIVIDE([Profit], [Total Sales], 0)
-```
-
-### Total Orders
-
-```DAX
-Total Orders :=
-DISTINCTCOUNT(Sales[SalesOrderNumber])
-```
-
-### Average Order Value
-
-```DAX
-Average Order Value :=
-DIVIDE([Total Sales], [Total Orders], 0)
-```
-
-
-## Dashboard Features
-
-### Monthly Sales Trend
-
-Tracks sales performance over time and helps identify monthly sales patterns.
-
-### Sales by Region
-
-Compares sales performance across regions and identifies the highest-performing areas.
-
-### Sales by Product Category
-
-Analyzes sales contribution from different product categories.
-
-### Top 10 Products
-
-Highlights the products generating the highest sales.
-
-### Salesperson Performance
-
-Compares sales and profit generated by individual salespeople.
-
-### Sales vs Target
-
-Evaluates actual sales performance against predefined sales targets.
-
-### Interactive Filters
-
-Users can dynamically filter the dashboard by:
-
-* **Year**
-* **Region**
-* **Product Category**
-* **Salesperson**
-
+* Sales
+* Product
+* Region
+* Reseller
+* Salesperson
+* SalespersonRegion
+* Targets
+* Date
 
 ## Project Workflow
 
-```text
-Raw CSV Data
-      ↓
-Power Query
-      ↓
-Data Cleaning & Transformation
-      ↓
-Power Pivot Data Model
-      ↓
-Relationships
-      ↓
-DAX Measures
-      ↓
-PivotTables
-      ↓
-PivotCharts
-      ↓
-Slicers
-      ↓
-Interactive Dashboard
-      ↓
-Business Insights
-```
+`Raw Data → Power Query → Data Cleaning → Data Modeling → DAX → PivotTable/PivotChart → Slicer → Dashboard → Insights`
 
+## Key KPIs
+
+* Total Sales
+* Total Cost
+* Total Quantity
+* Profit
+* Profit Margin
+* Total Orders
+* Average Order Value
+* Sales vs Target
+
+## Dashboard Features
+
+* Monthly Sales Trend
+* Sales by Region
+* Sales by Product Category
+* Top 10 Products
+* Salesperson Performance
+* Sales vs Target
+* Interactive filters by Year, Region, Product Category, and Salesperson
 
 ## Key Insights
 
-Examples of insights to be added:
+Insights will be added based on the final dashboard analysis, including:
 
-* Highest-performing region
-* Highest-revenue product category
-* Top 10 products by sales
+* Top-performing region
+* Best product category
+* Top products
 * Best-performing salesperson
-* Monthly sales trend
-* Profit and profit margin performance
-* Sales achievement against target
-
+* Sales & profit trends
+* Target achievement
 
 ## Skills Demonstrated
 
-* Data Cleaning
-* Data Transformation
-* Data Modeling
-* Power Query
-* Power Pivot
-* DAX
-* PivotTable
-* PivotChart
-* Excel Dashboard Development
-* Data Visualization
-* Business Intelligence
-* Sales Analytics
-* Business Insight Generation
-
+**Data Cleaning · Data Transformation · Data Modeling · Power Query · Power Pivot · DAX · Excel Dashboard · Data Visualization · Business Intelligence · Sales Analytics**
 
 ## Author
 
 **Aisha Patricia Sekar Ayu**
-
