@@ -1,6 +1,6 @@
 # Adventure Works Sales Analytics Dashboard
 
-Interactive **Sales Analytics Dashboard** built with **Microsoft Excel** to analyze sales performance, profitability, product, regional, and salesperson performance.
+Interactive Sales Analytics Dashboard built with Microsoft Excel to analyze sales performance, profitability, product, regional, and salesperson performance.
 
 ## Project Overview
 
@@ -75,7 +75,7 @@ Insights will be added based on the final dashboard analysis, including:
 
 ## Skills Demonstrated
 
-**Data Cleaning · Data Transformation · Data Modeling · Power Query · Power Pivot · DAX · Excel Dashboard · Data Visualization · Business Intelligence · Sales Analytics**
+**Data Cleaning|Data Transformation|Data Modeling|Power Query|Power Pivot|DAX|Excel Dashboard|Data Visualization|Business Intelligence|Sales Analytics**
 
 ## Author
 
