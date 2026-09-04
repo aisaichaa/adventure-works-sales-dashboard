@@ -205,8 +205,6 @@ Business Insights
 
 ## Key Insights
 
-> This section will contain the main business findings obtained from the dashboard.
-
 Examples of insights to be added:
 
 * Highest-performing region
